@@ -2,8 +2,12 @@ import numpy as np
 import cv2 as cv
  
 cap = cv.VideoCapture(0)
+
+# Uncomment this and comment above to load from src
+# cap = cv.VideoCapture('testVideo.mp4')
+
 if not cap.isOpened():
-    print("Cannot open camera")
+    print("Cannot open src")
     exit()
 while True:
     # Capture frame-by-frame
